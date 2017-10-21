@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".CrearCarro" />
-        <activity android:name=".DetalleCarro"></activity>
+        <activity android:name=".DetalleCarro"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ModificarCarro"></activity>
     </application>
 
 </manifest>

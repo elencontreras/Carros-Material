@@ -26,11 +26,11 @@
     <string name="error3">El precio no puede ser cero</string>
     <string name="titulo_eliminar_mensaje">Eliminar Persona</string>
     <string name="eliminar_mensaje">¿Está seguro que desea elminar este carro?</string>
+    <string name="msj_exito_modificar">¿Está seguro que desea elminar este carro?</string>
     <string name="si_eliminar_mensaje">Si</string>
     <string name="no_eliminar_mensaje">No</string>
     <string name="no_vacio_error">Este campo no puede estar vacío</string>
     <string name="persona_existente_error">Ya existe un carro ingresado con esta placa</string>
-
 
 
     <string-array name="opciones">

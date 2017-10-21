@@ -1,5 +1,7 @@
 package com.example.android.carros_material;
 
+import android.util.Log;
+
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -30,8 +32,21 @@ public class Datos {
         return carros;
     }
 
-    public static void eliminarPersona(Carro c){
+    public static void eliminarCarro(Carro c){
         databaseReference.child(db).child(c.getId()).removeValue();
 
+    }
+    public static int ExisteCarro(String placa){
+        for (int i = 0; i < carros.size(); i++) {
+            if (carros.get(i).getPlaca().equals(placa)){
+                return i;
+            }
+        }
+        return -1;
+
+    }
+
+    public static void Modificar(Carro c) {
+        databaseReference.child(db).child(c.getId()).setValue(c);
     }
 }

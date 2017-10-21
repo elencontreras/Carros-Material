@@ -73,7 +73,7 @@ public class DetalleCarro extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 Carro c = new Carro(id);
-                Datos.eliminarPersona(c);
+                Datos.eliminarCarro(c);
                 onBackPressed();
 
             }
@@ -94,5 +94,12 @@ public class DetalleCarro extends AppCompatActivity {
         finish();
         Intent i = new Intent(DetalleCarro.this,Principal.class);
         startActivity(i);
+    }
+
+    public void ModificarCarro(View v) {
+        Intent i = new Intent(DetalleCarro.this,ModificarCarro.class);
+        i.putExtra("datos",bundle);
+        startActivity(i);
+
     }
 }
